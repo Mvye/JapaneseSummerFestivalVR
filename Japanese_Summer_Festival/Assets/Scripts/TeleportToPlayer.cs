@@ -5,13 +5,18 @@ using UnityEngine;
 public class TeleportToPlayer : MonoBehaviour
 {
     public Transform teleportPoint;
+    Transform _transform;
 
+    void Start()
+    {
+        _transform = this.transform;
+    }
     void onCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Teleport"))
         {
-
-            this.gameObject.transform.position = teleportPoint.transform.position;
+            Debug.Log("Colliding with the teleport object");
+            _transform.transform.position = teleportPoint.transform.position;
         }
     }
 }
