@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartingScene.unity
+    guid: 7259fe4ab068c1e4ba0236c1f591242c
+  - enabled: 0
     path: Assets/Scenes/FirstSceneSetup.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/WithCubemap.unity
+    guid: 298bd696eddfa2442b1d0087050b8520
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d9a69a68cd47cd846b72ce89f09cb41b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 73ebb150770b0da46a6adbb319486743, type: 2}
